@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python using HTML</title>
+    
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.11.2/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.11.2/core.js"></script>
+    
+    <style>
+    py-script {
+      display: block;       
+            color: red;
+            border: 2px solid black; 
+            padding: 15px;        /* Space inside the border */
+            margin: 10px 0;       /* Space between the boxes */
+            border-radius: 8px;   /* Rounded corners */
+            background-color: #f9f9f9;
+            font-family: monospace;
+      }
+    </style>
+</head>
+<body>
+    <h1>Demonstration of python code in html</h1>
+
+    <py-script>
+        from pyscript import display
+        display("HELLO WORLD!")
+        </py-script>
+        <py-script>
+        for i in range(1, 20, 2):
+              display(i);
+    </py-script>
+     
+</body>
+</html>
+
