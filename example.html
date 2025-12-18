@@ -8,8 +8,7 @@
     <script type="module" src="https://pyscript.net/releases/2025.11.2/core.js"></script>
     
     <style>
-    py-script {
-      display: block;       
+    .box{    
             color: red;
             border: 2px solid black; 
             padding: 15px;        /* Space inside the border */
@@ -23,15 +22,18 @@
 <body>
     <h1>Demonstration of python code in html</h1>
 
+	<div id = "one" class="box">
     <py-script>
         from pyscript import display
-        display("HELLO WORLD!")
+        display("HELLO WORLD!", target="one")
         </py-script>
+        </div>
+        <div id = "two" class="box">
         <py-script>
         for i in range(1, 20, 2):
-              display(i);
+              display(i,  target="two");
     </py-script>
-     
+     </div>
 </body>
 </html>
 
